@@ -3,8 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - python -m venv venv
-      - source venv/bin/activate
       - echo Installing requirements from file
       - pip install pytest
   pre_build:
@@ -14,7 +12,7 @@ phases:
     commands:
       - echo Build started today
       - echo Building and running tests
-      - pytest tests/unit/test_factorial.py -v
+      - python tests/unit/test_factorial.py
   post_build:
     commands:
       - echo Build completed on `date`  
