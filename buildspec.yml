@@ -3,6 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
+      - python -m venv venv
+      - source venv/bin/activate
       - echo Installing requirements from file
       - pip install pytest
   pre_build:
