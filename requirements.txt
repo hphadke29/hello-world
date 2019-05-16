@@ -1,0 +1,8 @@
+pandas
+boto3
+tabulate
+pytest
+cassandra-driver
+parse
+kafka-python
+pympler
