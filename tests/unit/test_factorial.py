@@ -1,5 +1,5 @@
 import pytest
-from factorial import fact,div,stest_sum
+from src.factorial import fact,div,stest_sum
 
 def test_fact():
     res = fact(5)
