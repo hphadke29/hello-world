@@ -3,6 +3,7 @@ version: 0.2
 env:
   variables:
     PYTHONPATH: "${PYTHONPATH}:${CODEBUILD_SRC_DIR}"
+    export PYTHONPATH
 
 phases:
   install:
