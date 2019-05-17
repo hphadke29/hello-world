@@ -15,7 +15,7 @@ phases:
       - echo $HOME
       - echo $CODEBUILD_SRC_DIR
       - export PYTHONPATH=$CODEBUILD_SRC_DIR
-      - pytest ./tests/unit/test_factorial.py -v
+      - pytest ./tests/unit/ -v
   post_build:
     commands:
       - echo Build completed on `date`  
