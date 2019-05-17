@@ -10,7 +10,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started today
+      - echo Build started on `date`
       - echo Building and running tests
       - echo $HOME
       - echo $CODEBUILD_SRC_DIR
