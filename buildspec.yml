@@ -1,10 +1,5 @@
 version: 0.2
 
-env:
-  variables:
-    plaintext:
-      PYTHONPATH: $CODEBUILD_SRC_DIR
-
 phases:
   install:
     commands:
@@ -19,7 +14,7 @@ phases:
       - echo Building and running tests
       - echo $HOME
       - echo $CODEBUILD_SRC_DIR
-      - set $PYTHONPATH
+      - export PYTHONPATH=$CODEBUILD_SRC_DIR
       - pytest $CODEBUILD_SRC_DIR/tests/unit/test_factorial.py -v
   post_build:
     commands:
