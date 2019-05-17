@@ -13,6 +13,7 @@ phases:
       - echo Build started today
       - echo Building and running tests
       - echo $HOME
+      - echo $rootdir
       - pytest $HOME/tests/unit/test_factorial.py -v
   post_build:
     commands:
