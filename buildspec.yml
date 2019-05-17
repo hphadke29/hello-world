@@ -1,5 +1,9 @@
 version: 0.2
-    
+
+env:
+  variables:
+    PYTHONPATH: "${PYTHONPATH}:${CODEBUILD_SRC_DIR}"
+
 phases:
   install:
     commands:
@@ -13,8 +17,6 @@ phases:
       - echo Build started today
       - echo Building and running tests
       - echo $HOME
-      - echo $rootdir
-      - echo $CODEBUILD_SOURCE_REPO_URL
       - echo $CODEBUILD_SRC_DIR
       - pytest $CODEBUILD_SRC_DIR/tests/unit/test_factorial.py -v
   post_build:
