@@ -14,6 +14,7 @@ phases:
       - echo Building and running tests
       - echo $HOME
       - echo $rootdir
+      - echo $CODEBUILD_SOURCE_REPO_URL
       - pytest $HOME/tests/unit/test_factorial.py -v
   post_build:
     commands:
