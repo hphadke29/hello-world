@@ -14,7 +14,7 @@ phases:
       - echo Building and running tests
       - echo $HOME
       - echo $CODEBUILD_SRC_DIR
-      - export PYTHONPATH=$PYTHONPATH:/$CODEBUILD_SRC_DIR
+      - export PYTHONPATH=$PYTHONPATH:$CODEBUILD_SRC_DIR
       - pytest -svv ./tests/unit/
   post_build:
     commands:
