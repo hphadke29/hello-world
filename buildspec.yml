@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build started today
       - echo Building and running tests
-      - python tests/unit/test_factorial.py
+      - pytest test_factorial.py -v
   post_build:
     commands:
       - echo Build completed on `date`  
