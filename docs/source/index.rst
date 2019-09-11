@@ -13,9 +13,17 @@ static HTML and PDFs.
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
    
    getting_started
    rest
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
